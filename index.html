@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <META name="viewport" content="initial-scale=1">
+        <TITLE>
+            eSpice v12.0
+        </TITLE>
+        <LINK rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <!-- Embedding Google Fonts -->
+        <LINK href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css' />
+        <!-- Embedding stylesheets -->
+        <LINK rel="stylesheet" href="stylesheets/normalize.css" />
+        <LINK rel="stylesheet" href="stylesheets/style.css" />
+        <LINK rel="stylesheet" href="stylesheets/override.css" />
+        <LINK rel="stylesheet" href="stylesheets/animate.css" />
+        <!-- Embedding scripts -->
+        <SCRIPT src="scripts/wow.min.js"></SCRIPT>
+        <SCRIPT src="scripts/header.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></SCRIPT>
+        <!--<SCRIPT src="scripts/jquery-2.1.0.min.js"></SCRIPT>-->
+    </HEAD>
+    <BODY>
+        <DIV class="container">
+            <DIV class="row">
+                <DIV class="column full">
+                    <IMG src="images/logo.png" class="wow fadeInDown banner"/>
+                </DIV>
+            </DIV>
+            <DIV class="row">
+                <DIV class="column half right">
+                    <BUTTON class="ghost push wow fadeInUp" onclick="window.location.href = 'https://docs.google.com/forms/d/1Ge24p3NaWxl90yApz_JLZSfmIstk9Y7Uvq44iB9zHoo/viewform';">
+                    Register
+                    </BUTTON>
+                </DIV>
+                <DIV class="column half left">
+                    <BUTTON class="ghost push wow fadeInUp" href="#" onclick="window.location.href = 'details.html';">
+                    Details
+                    </BUTTON>
+                </DIV>
+            </DIV>
+            <DIV class="row">
+                <DIV class="column full">
+                    <DIV id="countdown" class="wow fadeInUp"></DIV>
+                    <CENTER>
+                    <BUTTON id="changeBase" class="wow fadeInDown">Human Readable</BUTTON>
+                    </CENTER>
+                </DIV>
+            </DIV>
+
+            
+        </DIV>
+        <SCRIPT>
+            new WOW().init();
+            $(document).ready(function() {
+                // countdown starts in binary
+                var binary = true;
+                var countdownInterval;
+                var countdownContent;
+                // current time
+                var currentTime = moment();
+                // event start time
+                var eventTime = moment('2014-08-22 08:00'); //2014-08-22 08:00
+
+                // check if event has started
+                if (eventTime.unix() > currentTime.unix()) {
+
+                    // update countdown at start
+                    updateCountdown();
+
+                    setTimeout(function() {
+                        // update time before creating interval
+                        currentTime = moment();
+
+                        updateCountdown();
+                        countdownInterval = setInterval(function() {
+                            currentTime = moment();
+
+                            updateCountdown();
+                        }, 1000)
+                    }, 1000 - currentTime.milliseconds());
+
+                    // button onclick change base and update countdown
+                    $('#changeBase').click(function() {
+                        if (binary) {
+                            $(this).text('Machine Readable');
+                            binary = false;
+                        } else {
+                            $(this).text('Human Readable');
+                            binary = true;
+                        }
+                        updateCountdown();
+                    });
+                } else {
+                    $('#changeBase').remove();
+                    $('#countdown').text('It\'s on');
+                }
+
+                function updateCountdown() {
+                    if (binary) {
+                        countdownContent = (eventTime.diff(currentTime, 'days') % 60).toString(2) + ' days ' + (eventTime.diff(currentTime, 'hours') % 60).toString(2) + ' hours ' + (eventTime.diff(currentTime, 'minutes') % 60).toString(2) + ' minutes ' + (eventTime.diff(currentTime, 'seconds') % 60).toString(2) + ' seconds';
+                    } else {
+                        countdownContent = eventTime.diff(currentTime, 'days') % 365 + ' days ' + eventTime.diff(currentTime, 'hours') % 24 + ' hours ' + eventTime.diff(currentTime, 'minutes') % 60 + ' minutes ' + eventTime.diff(currentTime, 'seconds') % 60 + ' seconds';
+                    }
+
+                    $('#countdown').text(countdownContent);
+
+                    if(eventTime.unix() < currentTime.unix()) {
+                        clearInterval(countdownInterval);
+                        $('#changeBase').remove();
+                        $('#countdown').text('It\'s on');
+                    }
+                }
+            });
+        </SCRIPT>
+    </BODY>
+</HTML>
