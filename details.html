@@ -1,0 +1,573 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <META name="viewport" content="initial-scale=1">
+        <TITLE>
+            eSpice v12.0
+        </TITLE>
+        <LINK rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <!-- Embedding Google Fonts -->
+        <LINK href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css' />
+        <!-- Embedding stylesheets -->
+        <LINK rel="stylesheet" href="stylesheets/normalize.css" />
+        <LINK rel="stylesheet" href="stylesheets/style.css" />
+        <LINK rel="stylesheet" href="stylesheets/override.css" />
+        <LINK rel="stylesheet" href="stylesheets/animate.css" />
+        <!-- Embedding scripts -->
+        <SCRIPT src="scripts/wow.min.js"></SCRIPT>
+        <SCRIPT src="scripts/header.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></SCRIPT>
+        <!--<SCRIPT src="scripts/jquery-2.1.0.min.js"></SCRIPT>-->
+    </HEAD>
+    <BODY>
+        
+        <DIV class="nav" id="bar">
+                <IMG src="images/icon.png" align="left" class="menu" onclick="show()" />
+                <A class="link wow fadeInDown" href="#about">About</A>
+                <A class="link wow fadeInDown" href="#schedule">Schedule</A>
+                <A class="link wow fadeInDown" href="#events">Events</A>
+                <A class="link wow fadeInDown" href="#squad">Squad</A>
+                <A class="link wow fadeInDown" href="#contact">Contact</A>
+            </DIV>
+        <DIV class="container">
+            <DIV class="row">
+                <DIV class="column full">
+                    <A href="index.html" target="_blank"><IMG src="images/logo.png" class="wow fadeInDown banner"/></A>
+                </DIV>
+            </DIV>
+
+            <DIV class="row section wow fadeInUp" id="about">
+                <DIV class="column full title wow fadeInDown">
+                    About
+                </DIV>
+                <DIV class="column half wow fadeInUp">
+                    <P>
+                        We are eSpice, the computer club of Delhi Public School, Noida.
+                        <BR /><BR />
+                        We are organizing our 12<SUP>th</SUP> Tech Symposium, eSpice v12.0, on 22<SUP>nd</SUP> August, 2014. Invites for the same have already been dispatched.
+                        <BR /><BR />
+                        This is Noida.
+                    </P>
+                </DIV>
+                <DIV class="column half wow fadeInUp">
+                    <IMG src="images/team.jpg" id="team" />
+                </DIV>
+            </DIV>
+
+
+            <DIV class="row section wow fadeInUp" id="schedule">
+                <DIV class="column full title wow fadeInDown">
+                    Schedule
+                </DIV>
+                <DIV class="column full">
+                    <TABLE class="schedule">
+                        <TR>
+                            <TD>Time/Venue</TD>
+                            <TD class="venue">Sr. Comp. Lab</TD>
+                            <TD class="venue">Bits & Bytes Lab</TD>
+                            <TD class="venue">Jr. Lab</TD>
+                            <TD class="venue">AV Room</TD>
+                            <TD class="venue">M.P. Hall</TD>
+                            <TD class="venue" colspan="2">Bio Lab</TD>
+                        </TR>
+                        <TR>
+                            <TD class="time">8:00 - 8:30</TD>
+                            <TD colspan="7" rowspan="2">Registration (Reception)</TD>
+                        </TR>
+                        <TR>
+                            <TD class="time">8:30 - 9:00</TD>
+                        </TR>
+                        <TR>
+                            <TD class="time">9:00 - 9:30</TD>
+                            <TD class="blank"></TD>
+                            <TD class="blank"></TD>
+                            <TD class="blank"></TD>
+                            <TD class="blank"></TD>
+                            <TD class="blank"></TD>
+                            <TD class="blank"></TD>
+                            <TD class="blank"></TD>
+                        </TR>
+                        <TR>
+                            <TD class="time">9:30 - 10:00</TD>
+                            <TD rowspan="6">Web.IMG</TD>
+                            <TD rowspan="3">Dubstep-e-Alam</TD>
+                            <TD rowspan="3">PresentIn</TD>
+                            <TD rowspan="6">KikOff</TD>
+                            <TD rowspan="3">GD+</TD>
+                            <TD rowspan="2">Ask.QZ Prelims</TD>
+                            <TD rowspan="4">CreatianART</TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="time">10:00 - 10:30</TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="time">10:30 - 11:00</TD>
+                            <TD rowspan="2">AdMe</TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="time">11:00 - 11:30</TD>
+                            <TD rowspan="3">CodeHub</TD>
+                            <TD rowspan="3">Logon</TD>
+                            <TD rowspan="3">Ask.QZ Final</TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="time">11:30 - 12:00</TD>
+                            <TD rowspan="2">OH SNAP!</TD>
+                            <TD rowspan="2">WordsApp</TD>
+                        </TR>    
+
+                        <TR>
+                            <TD class="time">12:00 - 12:30</TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="time">12:30 - 1:00</TD>
+                            <TD class="blank"></TD>
+                            <TD class="blank"></TD>
+                            <TD class="blank"></TD>
+                            <TD class="blank"></TD>
+                            <TD class="blank"></TD>
+                            <TD class="blank"></TD>
+                            <TD class="blank"></TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="time">1:00 - 1:30</TD>
+                            <TD colspan="7" rowspan="2">Formal Valedictory & Prize Distribution</TD>
+                        </TR>
+                        <TR>
+                            <TD class="time">1:30 - 2:00</TD>
+                        </TR>                                            
+                    </TABLE>
+                    <CENTER>
+                        <BUTTON class="ghost push sched wow fadeInUp" onclick="window.location.href = 'images/schedule.png';">
+                        Download schedule
+                        </BUTTON>
+                    </CENTER>
+                </DIV>
+            </DIV>
+
+            <DIV class="row section wow fadeInUp" id="events">
+                <DIV class="column full title wow fadeInDown">
+                    Events
+                </DIV>
+                <DIV class="column half wow fadeInUp">
+                    <DIV class="event_title">
+                        PresentIn
+                    </DIV>
+                    <P class="event">
+                        Participant(s): 2 Students per school
+                        <BR /><BR />
+                        Software: Microsoft PowerPoint 2007
+                        <BR /><BR />
+                        Eligibility: Class V
+                        <BR /><BR />
+                        Participants will need to create a presentation on a topic given <IMP>on the spot.</IMP><BR />
+                        Images will be provided. (External Media not allowed)
+                    </P>
+                </DIV>
+                <DIV class="column half wow fadeInUp">
+                    <DIV class="event_title">
+                        Logon
+                    </DIV>
+                    <P class="event">
+                        Participant(s): 2 Students per school
+                        <BR /><BR />
+                        Software: MSW LOGO
+                        <BR /><BR />
+                        Eligibility: Class III-IV
+                        <BR /><BR />                        
+                        Make the turtle dance to your whims.<BR />
+                        It's time for the juniors to shine.
+                    </P>
+                </DIV>
+            </DIV>
+
+
+            <DIV class="row section wow fadeInUp" id="events">
+                <DIV class="column half wow fadeInUp">
+                    <DIV class="event_title">
+                        Kik Off
+                    </DIV>
+                    <P class="event">
+                        Participant(s): 1 Student per school
+                        <BR /><BR />
+                        Eligibility: Class VIII-XII
+                        <BR /><BR />                        
+                        Only the real gamer will survive, Get ready for some action!<BR />
+                        Games will be revealed <IMP>on the spot.</IMP><BR />
+                        The participants are requested to bring their <IMP>own PS3 controllers.</IMP>
+                    </P>
+                </DIV>
+                <DIV class="column half wow fadeInUp">
+                    <DIV class="event_title">
+                        WordsApp
+                    </DIV>
+                    <P class="event">
+                        Participant(s): 2 Students per school
+                        <BR /><BR />                        
+                        Eligibility: Class IX-XII
+                        <BR /><BR />                                                
+                        This event can be puzzling...
+                    </P>
+                </DIV>
+            </DIV>
+
+
+            <DIV class="row section wow fadeInUp" id="events">
+                <DIV class="column half wow fadeInUp">
+                    <DIV class="event_title">
+                        Dubstep-e-Alam
+                    </DIV>
+                    <P class="event">
+                        Do you have the audacity to do it?<BR />
+                        Participant(s): 2 Students per school<BR /><BR />
+                        Software: Audacity, Virtual DJ, FL Studio, Soundforge<BR /><BR />
+                        Eligibility: Class IX-XII<BR /><BR />
+                        Participants have to prepare a radio show on the following topic with creative music
+                        and vocals.<BR />
+                        Theme:- <IMP>"Saturday Night" (Electro bollywood)</IMP><BR />
+                        Duration of the show should be of <IMP>5 to 7 minutes.</IMP><BR />
+                        The participants have to submit their project files at <IMP>chip.in.espice@gmail.com</IMP><BR /><BR />
+                        Last date of Submission: - <IMP>12<SUP>th</SUP> August, 2014</IMP><BR /><BR />
+                        <IMP>
+                        Selected teams are required to bring the project files on the day of the event for a
+                        cross-questioning session.</IMP>
+                    </P>
+                </DIV>
+                <DIV class="column half wow fadeInUp">
+                    <DIV class="event_title">
+                        OH SNAP!
+                    </DIV>
+                    <P class="event">
+                        Participant(s): 2 Students per school<BR /><BR />
+                        Topic: <IMP>Socializing before the network.</IMP><BR /><BR />
+                        Eligibility: Class X-XII<BR /><BR />
+                        The participants need to send two self clicked photos on the given topic.<BR />
+                        Last date of submission: <IMP>12<SUP>th</SUP> August, 2014</IMP><BR />
+                        Pictures have to mailed to: <IMP>chip.in.espice@gmail.com</IMP><BR />
+                        A small write up explaining the photos should be sent along with the pictures.<BR /><BR />
+                        <IMP>
+                        The selected teams are required to carry their camera equipments for the on-site
+                        event.</IMP>
+                    </P>
+                </DIV>
+            </DIV>
+
+
+            <DIV class="row section wow fadeInUp" id="events">
+                <DIV class="column half wow fadeInUp">
+                    <DIV class="event_title">
+                        GD+
+                    </DIV>
+                    <P class="event">
+                        Ever believed talking was your skill? Here's your event.<BR /><BR />
+                        Participant(s): 1 Student per school<BR /><BR />
+                        Eligibility: Class X-XII<BR /><BR />
+                        The Participants should be well versed with the latest in technology.<BR />
+                        Students are advised to carry a paper and pen to note down vital points.<BR />
+                        The topic will be given <IMP>on the spot.</IMP>
+                    </P>
+                </DIV>
+                <DIV class="column half wow fadeInUp">
+                    <DIV class="event_title">
+                        Ask.QZ
+                    </DIV>
+                    <P class="event">
+                        We'll ask you questions. You'll answer. Maybe...<BR /><BR />
+                        Participant(s): 2 Students per school.<BR /><BR />
+                        Eligibility: Class IX-XII<BR /><BR />
+                        Six teams will be selected for the final round on the basis of a written preliminary
+                        round.
+                    </P>
+                </DIV>
+            </DIV>
+
+
+            <DIV class="row section wow fadeInUp" id="events">
+                <DIV class="column half wow fadeInUp">
+                    <DIV class="event_title">
+                        CodeHub
+                    </DIV>
+                    <P class="event">
+                        cout<<"You get to say - I'm cool, int i?";<BR />
+                        Participant(s): 2 Students per school<BR /><BR />
+                        Time Allotted: 1:30 Hrs.<BR /><BR />
+                        Eligibility: Class X-XII<BR /><BR />
+                        Software: Turbo C++<BR /><BR />
+                        Have a good knowledge of C++ programming;<BR />
+                        <CODE>//Let logic prevail!</CODE>
+                    </P>
+                </DIV>
+                <DIV class="column half wow fadeInUp">
+                    <DIV class="event_title">
+                        Web.IMG
+                    </DIV>
+                    <P class="event">
+                        Participant(s): 2 Students per school<BR /><BR />
+                        Eligibility: Class XI-XII<BR /><BR />
+                        Software: Adobe Photoshop CC, Sublime Text 3, Google Chrome<BR /><BR />
+                        Make Arachne envious.<BR />
+                        The topic will be given <IMP>on the spot.</IMP>
+                    </P>
+                </DIV>
+            </DIV>
+
+
+            <DIV class="row section wow fadeInUp" id="events">
+                <DIV class="column half wow fadeInUp">
+                    <DIV class="event_title">
+                        AdMe
+                    </DIV>
+                    <P class="event">
+                        Participant(s): 2 Students per school<BR /><BR />
+                        Eligibility: Class IX-XII<BR /><BR />
+                        Participants are required to make an advertisement (launch movie) for a <IMP>fictional
+                        instant messaging app.</IMP> Showcase your app, what it does and why it's great.<BR />
+                        The participants need to upload their entries on YouTube.<BR /><BR />
+                        The best teams will be called for cross-questioning on the event day.<BR /><BR />
+                        Last date of submission: <IMP>12<SUP>th</SUP> August, 2014</IMP><BR />
+                        Links have to be mailed to: <IMP>chip.in.espice@gmail.com</IMP>
+                    </P>
+                </DIV>
+                <DIV class="column half wow fadeInUp">
+                    <DIV class="event_title">
+                        CreationART
+                    </DIV>
+                    <P class="event">
+                        Participant(s): 2 Students per school<BR /><BR />
+                        Eligibilty: Class IX-XII<BR /><BR />
+                        Something for the Da Vincis.<BR />
+                        Carry your own material - sketch pens, scissors, markers etc.<BR />
+                        Chart paper shall be provided.
+                    </P>
+                </DIV>
+            </DIV>
+
+            <DIV class="row wow fadeInUp" id="squad">
+                <DIV class="column full title wow fadeInDown">
+                    Squad
+                </DIV>
+                <DIV class="column one-fourth squad" style="margin-left:0;">
+                    
+                    <IMG class="eb" src="https://graph.facebook.com/gaurav.loothra/picture?width=128&height=128" />
+                    <BR />
+                    <A href="http://fb.me/gaurav.loothra" class="names" target="_blank">Gaurav Loothra</A>
+                    <BR />
+                    <SPAN class="post">
+                        President
+                    </SPAN>
+                </DIV>
+                <DIV class="column one-fourth squad">
+
+                    <IMG class="eb" src="https://graph.facebook.com/shashwat.mishra.503/picture?width=128&height=128" />
+                    <BR />
+                    <A href="http://fb.me/shashwat.mishra.503" class="names" target="_blank">Shashwat Mishra</A>
+                    <BR />
+                    <SPAN class="post">
+                        Movie Making
+                    </SPAN>
+                </DIV>
+                <DIV class="column one-fourth squad">
+                    
+                    <IMG class="eb" src="https://graph.facebook.com/pragyankumarsingh/picture?width=128&height=128" />
+                    <BR />
+                    <A href="http://fb.me/pragyankumarsingh" class="names" target="_blank">Pragyan Singh</A>
+                    <BR />
+                    <SPAN class="post">
+                        Movie Making
+                    </SPAN>
+                </DIV>
+
+                <DIV class="column one-fourth squad">
+                    
+                    <IMG class="eb" src="https://graph.facebook.com/parth.dhar.5/picture?width=128&height=128" />
+                    <BR />
+                    <A href="http://fb.me/parth.dhar.5" class="names" target="_blank">Parth Dhar</A>
+                    <BR />
+                    <SPAN class="post">
+                        Web Designing
+                    </SPAN>
+                </DIV>
+            </DIV>
+
+            <DIV class="row" id="squad">
+
+                <DIV class="column one-fourth squad">
+                    
+                    <IMG class="eb" src="https://graph.facebook.com/raghav.yeah/picture?width=128&height=128" />
+                    <BR />
+                    <A href="http://fb.me/raghav.yeah" class="names" target="_blank">Raghav Mahajan</A>
+                    <BR />
+                    <SPAN class="post">
+                        Programming
+                    </SPAN>
+                </DIV>
+                <DIV class="column one-fourth squad">
+
+                        <IMG class="eb" src="https://graph.facebook.com/hgoyal.dps/picture?width=128&height=128" />
+                        <BR />
+                        <A href="http://fb.me/hgoyal.dps" class="names" target="_blank">Harsh Goyal</A>
+                        <BR />
+                        <SPAN class="post">
+                            Programming
+                        </SPAN>
+                </DIV>
+                <DIV class="column one-fourth squad">
+                    
+                    <IMG class="eb" src="https://graph.facebook.com/gulati.lakshy/picture?width=128&height=128" />
+                    <BR />
+                    <A href="http://fb.me/gulati.lakshy" class="names" target="_blank">Lakshay Gulati</A>
+                    <BR />
+                    <SPAN class="post">
+                        Music Mixing
+                    </SPAN>
+                </DIV>
+
+                <DIV class="column one-fourth squad">
+                    
+                    <IMG class="eb" src="https://graph.facebook.com/DeeJay.Siesta/picture?width=128&height=128" />
+                    <BR />
+                    <A href="http://fb.me/DeeJay.Siesta" class="names" target="_blank">Shambhav Shankar</A>
+                    <BR />
+                    <SPAN class="post">
+                        Music Mixing
+                    </SPAN>
+                </DIV>
+            </DIV>
+            
+
+            <DIV class="row" id="squad">
+
+                <DIV class="column one-fourth squad">
+                    
+                        <IMG class="eb" src="https://graph.facebook.com/yaaraaptohbadecoolho/picture?width=128&height=128" />
+                        <BR />
+                        <A href="http://fb.me/yaaraaptohbadecoolho" class="names" target="_blank">Harshit Luthra</A>
+                        <BR />
+                        <SPAN class="post">
+                            Quiz
+                        </SPAN>
+                </DIV>
+
+                <DIV class="column one-fourth squad">
+                    
+                    <IMG class="eb" src="https://graph.facebook.com/100001038401445/picture?width=128&height=128" />
+                    <BR />
+                    <A href="http://fb.me/100001038401445" class="names" target="_blank">Ayush Anand</A>
+                    <BR />
+                    <SPAN class="post">
+                        Quiz
+                    </SPAN>
+                </DIV>
+                <DIV class="column one-fourth squad">
+
+                        <IMG class="eb" src="https://graph.facebook.com/aayush.khanduri/picture?width=128&height=128" />
+                        <BR />
+                        <A href="http://fb.me/aayush.khanduri" class="names" target="_blank">Aayush Khanduri</A>
+                        <BR />
+                        <SPAN class="post">
+                            Digi Imaging
+                        </SPAN>
+                </DIV>
+                <DIV class="column one-fourth squad">
+                    
+                    <IMG class="eb" src="https://graph.facebook.com/coolapoorvrocks/picture?width=128&height=128" />
+                    <BR />
+                    <A href="http://fb.me/coolapoorvrocks" class="names" target="_blank">Apoorv Pandey</A>
+                    <BR />
+                    <SPAN class="post">
+                        Movie Making
+                    </SPAN>
+                </DIV>
+            </DIV>
+            
+
+            <DIV class="row section wow fadeInUp" id="contact">
+                <DIV class="column full title wow fadeInDown">
+                    Contact
+                </DIV>
+                <DIV class="column full">
+                    <P>
+                            In case of any queries or doubts, you can get in touch with us on facebook, drop us a mail or simply give us a call.
+                            <BR /><BR />
+                            Gaurav Loothra<NO>+91-95 60 688497</NO><BR />
+                            Harshit Luthra<NO>+91-88 02 499791</NO><BR />
+                            Shashwat Mishra<NO>+91-98 18 350538</NO><BR />
+                            Aayush Khanduri<NO>+91-97 11 309768</NO>
+                    </P>
+                </DIV>
+                <DIV class="column half wow fadeInUp symbol fadeInUp wow">
+                            <A href="https://www.facebook.com/eSpice" target="_blank">circlefacebook</A>  
+                </DIV>
+                <DIV class="column half symbol fadeInUp wow">
+                            <A href="mailto:chip.in.espice@gmail.com" target="_blank">circleemail</A>                 
+                            
+
+                </DIV>
+            </DIV>
+        </DIV>
+        <DIV class="wow fadeIn foot">
+            <BR />
+            Made with &hearts; in Noida.
+            <BR />
+        </DIV>
+        <SCRIPT>
+            new WOW().init();
+
+            var menu = "small";
+
+            $('.link').click(function () {
+                if(window.innerHeight > window.innerWidth){ 
+
+                    $('.link').css('opacity','0').delay(250);
+                    $('.link').css('display','none');
+                    $('.nav').css('min-height','3.5em');
+                    menu = "small";
+                    }
+                });
+
+            function show() {
+                if (menu == "small") {
+                    $('.nav').css('min-height','20.5em');
+                    $('.link').css('opacity','1');
+                    $('.link').css('display','inline-block');
+                    menu = "big";
+                } else {
+                    $('.link').css('opacity','0').delay(250);
+                    $('.link').css('display','none');
+                    $('.nav').css('min-height','3.5em');
+                    menu = "small";
+                }
+            }
+            /*
+            window.addEventListener("orientationchange", function() {
+                if(window.innerHeight < window.innerWidth){ 
+                    $('.link').css('opacity','1');
+                    $('.link').css('display','inline-block');
+                }
+            }, false);
+
+            $( window ).on( "orientationchange", function( event ) {
+                if ($(window).width() < $('.schedule').width()) {
+                    $('.sched').css('display','inline-block');
+                    $('.schedule').css('display','none');
+                }
+
+            });
+            */
+            // smooth scroll
+            var navbarHeight = $('.nav').height(); // assuming height remains constant
+            $('.link').click(function() {
+                var link = $(this);
+                $('html, body').animate({ scrollTop: $(link.attr('href')).offset().top - navbarHeight - 15});
+                return false;
+            });
+
+        </SCRIPT>
+    </BODY>
+</HTML>

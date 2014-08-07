@@ -1,0 +1,77 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <div id="countdown"></div>
+    <button id="changeBase">Human Readable</button>
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    	// countdown starts in binary
+    	var binary = true;
+    	var countdownInterval;
+    	var countdownContent;
+    	// current time
+    	var currentTime = moment();
+    	// event start time
+    	var eventTime = moment('2014-08-22 08:00'); //2014-08-22 08:00
+
+    	// check if event has started
+    	if (eventTime.unix() > currentTime.unix()) {
+
+    		// update countdown at start
+    		updateCountdown();
+
+    		setTimeout(function() {
+    			// update time before creating interval
+    			currentTime = moment();
+
+    			updateCountdown();
+    			countdownInterval = setInterval(function() {
+    				currentTime = moment();
+
+    				updateCountdown();
+    			}, 1000)
+    		}, 1000 - currentTime.milliseconds());
+
+    		// button onclick change base and update countdown
+    		$('#changeBase').click(function() {
+    			if (binary) {
+    				$(this).text('Machine Readable');
+    				binary = false;
+    			} else {
+    				$(this).text('Human Readable');
+    				binary = true;
+    			}
+    			updateCountdown();
+    		});
+    	} else {
+    		$('#changeBase').remove();
+    		$('#countdown').text('It\'s on');
+    	}
+
+    	function updateCountdown() {
+    		if (binary) {
+    			countdownContent = (eventTime.diff(currentTime, 'days') % 60).toString(2) + ' days ' + (eventTime.diff(currentTime, 'hours') % 60).toString(2) + ' hours ' + (eventTime.diff(currentTime, 'minutes') % 60).toString(2) + ' minutes ' + (eventTime.diff(currentTime, 'seconds') % 60).toString(2) + ' seconds';
+    		} else {
+    			countdownContent = eventTime.diff(currentTime, 'days') % 365 + ' days ' + eventTime.diff(currentTime, 'hours') % 24 + ' hours ' + eventTime.diff(currentTime, 'minutes') % 60 + ' minutes ' + eventTime.diff(currentTime, 'seconds') % 60 + ' seconds';
+    		}
+
+    		$('#countdown').text(countdownContent);
+
+    		if(eventTime.unix() < currentTime.unix()) {
+    			clearInterval(countdownInterval);
+    			$('#changeBase').remove();
+    			$('#countdown').text('It\'s on');
+    		}
+    	}
+    });
+    </script>
+</body>
+
+</html>
