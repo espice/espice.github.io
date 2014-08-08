@@ -17,7 +17,7 @@
 	src: url('fonts/RobotoSlab-Light.ttf');
 }
 @font-face {
-	font-family: 'Roboto-Regular';
+	font-family: 'Roboto-Regular'sec;
 	src: url('fonts/RobotoSlab-Regular.ttf');
 }
 
@@ -217,7 +217,7 @@ body {
 .section p {
 	font-family: 'Roboto-Light', 'Open Sans', sans-serif;
 	font-size: 1.25em;
-	color: #013663;
+	color: #0032a8;
 	max-width: 100%;
 	display: inline-block; 
 }
