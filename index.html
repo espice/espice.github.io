@@ -98,7 +98,7 @@
 
                 function updateCountdown() {
                     if (binary) {
-                        countdownContent = (eventTime.diff(currentTime, 'days') % 365).toString(2) + ' days ' + (eventTime.diff(currentTime, 'hours') % 60).toString(2) + ' hours ' + (eventTime.diff(currentTime, 'minutes') % 60).toString(2) + ' minutes ' + (eventTime.diff(currentTime, 'seconds') % 60).toString(2) + ' seconds';
+                        countdownContent = (eventTime.diff(currentTime, 'days') % 365).toString(2) + ' days ' + (eventTime.diff(currentTime, 'hours') % 24).toString(2) + ' hours ' + (eventTime.diff(currentTime, 'minutes') % 60).toString(2) + ' minutes ' + (eventTime.diff(currentTime, 'seconds') % 60).toString(2) + ' seconds';
                     } else {
                         countdownContent = eventTime.diff(currentTime, 'days') % 365 + ' days ' + eventTime.diff(currentTime, 'hours') % 24 + ' hours ' + eventTime.diff(currentTime, 'minutes') % 60 + ' minutes ' + eventTime.diff(currentTime, 'seconds') % 60 + ' seconds';
                     }
