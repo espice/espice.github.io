@@ -237,11 +237,13 @@ body {
 
 }
 .venue {
-	background-color: #1abc9c;
+	/*background-color: #1abc9c;*/
+	background-color: #3498db;
 	color: #FFFFFF;
 }
 .time {
-	background-color: #9b59b6;
+	/*background-color: #9b59b6;*/
+	background-color: #3498db;
 	color: #FFFFFF;
 }
 .blank{
