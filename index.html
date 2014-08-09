@@ -18,7 +18,7 @@
         <SCRIPT src="scripts/header.js"></SCRIPT>
         <SCRIPT type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></SCRIPT>
         <SCRIPT type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></SCRIPT>
-        <!--<SCRIPT src="scripts/jquery-2.1.0.min.js"></SCRIPT>-->
+        <!-- <SCRIPT src="scripts/jquery-2.1.0.min.js"></SCRIPT> -->
     </HEAD>
     <BODY>
         <DIV class="container">
@@ -98,7 +98,7 @@
 
                 function updateCountdown() {
                     if (binary) {
-                        countdownContent = (eventTime.diff(currentTime, 'days') % 60).toString(2) + ' days ' + (eventTime.diff(currentTime, 'hours') % 60).toString(2) + ' hours ' + (eventTime.diff(currentTime, 'minutes') % 60).toString(2) + ' minutes ' + (eventTime.diff(currentTime, 'seconds') % 60).toString(2) + ' seconds';
+                        countdownContent = (eventTime.diff(currentTime, 'days') % 365).toString(2) + ' days ' + (eventTime.diff(currentTime, 'hours') % 60).toString(2) + ' hours ' + (eventTime.diff(currentTime, 'minutes') % 60).toString(2) + ' minutes ' + (eventTime.diff(currentTime, 'seconds') % 60).toString(2) + ' seconds';
                     } else {
                         countdownContent = eventTime.diff(currentTime, 'days') % 365 + ' days ' + eventTime.diff(currentTime, 'hours') % 24 + ' hours ' + eventTime.diff(currentTime, 'minutes') % 60 + ' minutes ' + eventTime.diff(currentTime, 'seconds') % 60 + ' seconds';
                     }
