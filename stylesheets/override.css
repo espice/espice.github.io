@@ -263,6 +263,20 @@ td {
 	color: #2980b9;
 
 }
+.result {
+	font-size: 1.35em;
+	margin-top: 2em;
+	font-family: 'Roboto-Light', 'Open Sans', sans-serif;
+	color: #2980b9;
+	list-style-type: lower-greek;
+}
+school {
+	font-family: 'Roboto-Regular', 'Open Sans', sans-serif;
+
+}
+.margin_top {
+	margin-top: 2em;
+}
 .event_title {
 	text-align: center;
 	font-family: 'Roboto-Bold', 'Open Sans', sans-serif;
